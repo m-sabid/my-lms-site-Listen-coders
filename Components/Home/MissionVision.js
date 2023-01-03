@@ -81,6 +81,7 @@ export default function MissionVision() {
             },
           }}
         >
+          
           {technology.map((dt, index) => {
             return (
               <>
