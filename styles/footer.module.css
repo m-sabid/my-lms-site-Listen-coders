@@ -1,0 +1,113 @@
+.footer {
+  background-color: #e2e7ff91;
+  border-radius: 10px;
+  padding: 15px;
+  color: #0405f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin-bottom: 200px; */
+  align-items: center;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.footerName {
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px;
+  margin: 0 10px;
+}
+
+.button {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 0.75em 1.5em;
+  cursor: pointer;
+}
+
+.footerName svg {
+  font-size: 1.5em;
+  vertical-align: middle;
+  animation: swing 900ms linear infinite;
+  transform-origin: center;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+.footerBottom {
+  width: 100%;
+}
+.footerH3 {
+  background-image: linear-gradient(to bottom, #f4f5f7, #dcdcdc);
+  padding: 5px 0;
+  border-radius: 5px;
+  border-bottom: 5px solid #0405f7;
+}
+.footerBottomLinks {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footerBottomLinks a {
+  border-bottom: 1px solid gray;
+  transition: background 5s linear;
+  background-image: linear-gradient(to top, hsl(240, 88%, 78%), white);
+
+  padding: 10px;
+}
+.footerBottomLinks a:hover {
+  background-image: linear-gradient(
+    to top,
+    rgb(255, 255, 255),
+    rgb(255, 255, 255)
+  );
+}
+
+
+
+
+
+.linkIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+}
+.linkIcons svg {
+    font-size: 1.2rem;
+}
+.linkIcons:hover svg {
+  animation: zoomInOutAnimation 1s infinite;
+}
+
+@keyframes zoomInOutAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,16 @@
+.logo_res{
+    display:none;
+    text-align: center;
+}
+.logo_link{
+    display: flex;
+    background-color: red;
+}
+@media (max-width: 900px) {
+    .logo{
+        display:none;
+    }
+    .logo_res{
+        display:block;
+    }
+  }
