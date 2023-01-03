@@ -98,8 +98,8 @@ function ResponsiveAppBar() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+              {pages.map((page, index) => (
+                <MenuItem key={index} onClick={handleCloseNavMenu}>
                   <Link
                 href={`${page.toLowerCase() === "home" ? '/' : page.toLowerCase()}`}
                 key={page}
@@ -130,10 +130,10 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }} style={{
                   justifyContent: "space-evenly"}}
                   >
-            {pages.map((page) => (
+            {pages.map((page, index) => (
               <Link
               href={`${page.toLowerCase() === "home" ? '/' : page.toLowerCase()}`}
-                key={page}
+                key={index}
                 style={{
                   margin: "0 5px",
                   color: "white",
@@ -167,8 +167,8 @@ function ResponsiveAppBar() {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
+              {settings.map((setting, index) => (
+                <MenuItem key={index} onClick={handleCloseUserMenu}>
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
               ))}

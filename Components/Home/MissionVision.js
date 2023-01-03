@@ -81,10 +81,10 @@ export default function MissionVision() {
             },
           }}
         >
-          {technology.map((dt) => {
+          {technology.map((dt, index) => {
             return (
               <>
-                <SwiperSlide className={styles.mab_images}>
+                <SwiperSlide className={styles.mab_images} key={index}>
                   <Image
                     alt={dt.title}
                     src={dt.link}
