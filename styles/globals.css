@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  min-height: 100vh !important;
 }
 
 a {
@@ -14,9 +15,6 @@ body {
   background: radial-gradient(ellipse at left, #4646ff, transparent),
     radial-gradient(ellipse at top, #0c0cbe, transparent),
     radial-gradient(ellipse at bottom, #01aae5, transparent);
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
   color: white;
 }
 
@@ -68,11 +66,12 @@ body {
 /* enroll btn */
 
 .enroll_btn {
-  background-color: green;
+  background-color: #aaff00;
   cursor: pointer;
-  color: white;
+  color: rgb(0, 0, 0);
   border: none;
   padding: 10px 15px;
+  font-weight: 700;
   margin: 10px 0;
   border-radius: 5px;
 
@@ -80,7 +79,6 @@ body {
   position: relative;
 }
 .enroll_btn:hover {
-  position: static;
   background-color: white;
   color: black;
   font-weight: 700;
