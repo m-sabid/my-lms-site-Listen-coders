@@ -11,9 +11,10 @@ a {
   text-decoration: none;
 }
 body {
-  background: radial-gradient(ellipse at left, #4646ff, transparent),
+  background: linear-gradient(to left, #0e0e51, #dde8ed);
+  /* background-image: radial-gradient(ellipse at left, #4646ff, transparent),
     radial-gradient(ellipse at top, #0c0cbe, transparent),
-    radial-gradient(ellipse at bottom, #01aae5, transparent);
+    radial-gradient(ellipse at bottom, #01aae5, transparent); */
   color: white;
 }
 
