@@ -31,31 +31,28 @@ const ClassesScheduler = () => {
                 </div>
                 <div
                   className={
-                    selected === index
-                      ? styles.show
-                      : styles.collapse_content
+                    selected === index ? styles.show : styles.collapse_content
                   }
                 >
+                  <div className={styles.class}>
+                    <p>{seconds} seconds</p>
+                    <p>{hours} hours</p>
+                    <p>{minutes} minutes</p>
+                    <p>{days} days</p>
+                    <button
+                      disabled={
+                        seconds >= 0 && minutes >= 0 && hours >= 0 && days >= 0
+                          ? "true"
+                          : ""
+                      }
+                    >
+                      Next
+                    </button>
+                    <button>Previous</button>
+                  </div>
                   <p>{dt.descriptions}</p>
                 </div>
               </div>
-            </div>
-
-            <div className={styles.class}>
-              <p>{seconds} seconds</p>
-              <p>{hours} hours</p>
-              <p>{minutes} minutes</p>
-              <p>{days} days</p>
-              <button
-                disabled={
-                  seconds >= 0 && minutes >= 0 && hours >= 0 && days >= 0
-                    ? "true"
-                    : ""
-                }
-              >
-                Next
-              </button>
-              <button>Previous</button>
             </div>
             <hr />
             <hr />
