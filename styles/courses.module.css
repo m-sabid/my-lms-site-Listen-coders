@@ -1,0 +1,27 @@
+.collapse_items {
+  background-color: yellow;
+  margin: 20px auto;
+  padding: 10px 5px;
+  width: 50%;
+}
+.collapse_title {
+  color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.collapse_content {
+  color: green;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.show {
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+  color: green;
+  overflow: hidden;
+}
