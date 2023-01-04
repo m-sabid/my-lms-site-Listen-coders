@@ -1,3 +1,25 @@
+/* declaring the css variables colors */
+/* :root {
+  --color-primary-accent: #2614c7;
+  --color-primary: #000;
+  --color-button: #3d486c;
+  --color-paragraph: #797979;
+  --color-button-text: rgb(255, 255, 255);
+  --color-background: #fff;
+  --color-anchor: #000aff;
+}
+
+[data-theme='dark'] {
+  --color-primary-accent: #00ff4c;
+  --color-primary: #fff;
+  --color-button: #00ff4c;
+  --color-paragraph: #8a8a8a;
+  --color-button-text: rgb(0, 0, 0);
+  --color-background: #22212b;
+  --color-anchor: #00ff4c;
+} */
+
+
 body {
   padding: 0;
   margin: 0;
@@ -10,14 +32,6 @@ body {
   position: relative;
   min-height: 100vh !important;
   color: white;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-image: radial-gradient(ellipse at left, #4646ff, transparent),
-    radial-gradient(ellipse at top, #0c0cbe, transparent),
-    radial-gradient(ellipse at bottom, #01aae5, transparent);
-  }
 }
 
 a {
@@ -39,16 +53,6 @@ a {
   padding: 10px;
   border-radius: 5px;
   margin: 20px 0;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: white;
-  }
 }
 .page404 {
   min-height: 90vh;
