@@ -15,7 +15,6 @@ body {
     background-image: radial-gradient(ellipse at left, #4646ff, transparent),
     radial-gradient(ellipse at top, #0c0cbe, transparent),
     radial-gradient(ellipse at bottom, #01aae5, transparent);
-    font-size: 6rem;
   }
 }
 
