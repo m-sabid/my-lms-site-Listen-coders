@@ -1,21 +1,35 @@
 [
   {
-    "nameOfCourse": "Name is ok",
+    "nameOfCourse": "What is html",
     "uploadTime": "Dec 10, 2022 10:00:00",
-    "descriptions": "lorem hamma"
+    "descriptions": "lorem hamma",
+    "classes": [
+      {
+        "class_title": "HTML CLASS 1",
+        "classLink": "https://www.youtube.com/embed/tmJP3Aeo8AE"
+      },
+      {
+        "class_title": "HTML CLASS 2",
+        "classLink": "https://www.youtube.com/embed/rzgnyQ2bME4"
+      },
+      {
+        "class_title": "HTML CLASS 3",
+        "classLink": "https://youtube.com/embed/8I3NTE4cn5s"
+      }
+    ]
   },
   {
-    "nameOfCourse": "Name is ok",
+    "nameOfCourse": "What is css",
     "uploadTime": "Dec 6, 2023 10:00:00",
     "descriptions": "lorem hamma hamma"
   },
   {
-    "nameOfCourse": "Name is ok",
+    "nameOfCourse": "Let's Know JavaScript",
     "uploadTime": "Dec 7, 2023 00:01:10",
     "descriptions": "lorem hamma hamma hamma"
   },
   {
-    "nameOfCourse": "Name is ok",
+    "nameOfCourse": "GitHub",
     "uploadTime": "Dec 6, 2022 11:59:00",
     "descriptions": "lorem hamma hamma hamma 123"
   }

@@ -1,10 +1,11 @@
+import Link from "next/link";
 import { useState } from "react";
 import useCountdown from "../../hooks/useCountdown";
 import Data from "../../pages/api/data.json";
 import styles from "../../styles/courses.module.css";
 
-const ClassesScheduler = () => {
-  const [selected, setSelected] = useState();
+const ClassesScheduler = ({ getVideoChange }) => {
+  const [selected, setSelected] = useState(0);
 
   const toggle = (i) => {
     if (selected === i) {
@@ -27,36 +28,51 @@ const ClassesScheduler = () => {
                   onClick={() => toggle(index)}
                 >
                   <h4>{dt.nameOfCourse}</h4>{" "}
-                  <span>{selected === index ? "-" : "+"}</span>
+                  <p style={{ fontSize: "2rem" }}>
+                    {selected === index ? "-" : "+"}
+                  </p>
                 </div>
                 <div
                   className={
                     selected === index ? styles.show : styles.collapse_content
                   }
                 >
-                  <div className={styles.class}>
-                    <p>{seconds} seconds</p>
-                    <p>{hours} hours</p>
-                    <p>{minutes} minutes</p>
-                    <p>{days} days</p>
-                    <button
-                      disabled={
-                        seconds >= 0 && minutes >= 0 && hours >= 0 && days >= 0
-                          ? "true"
-                          : ""
-                      }
-                    >
-                      Next
-                    </button>
-                    <button>Previous</button>
-                  </div>
-                  <p>{dt.descriptions}</p>
+                  {dt.classes?.map((cls, index) => {
+                    return (
+                      <>
+                        <button
+                          className={styles.class_title}
+                          onClick={() => getVideoChange(cls)}
+                        >
+                          {cls.class_title}
+                        </button>
+                      </>
+                    );
+                  })}
+
+                  {days && hours && minutes && seconds > 0 ? (
+                    <div className={styles.lms_classes}>
+                      <p>
+                        <span> {days <= 9 ? "0" + days : days} </span> days
+                      </p>
+                      <p>
+                        <span> {hours <= 9 ? "0" + hours : hours} </span> hours
+                      </p>
+                      <p>
+                        <span> {minutes <= 9 ? "0" + minutes : minutes} </span>{" "}
+                        minutes
+                      </p>
+                      <p>
+                        <span> {seconds <= 9 ? "0" + seconds : seconds} </span>{" "}
+                        seconds
+                      </p>
+                    </div>
+                  ) : (
+                    ""
+                  )}
                 </div>
               </div>
             </div>
-            <hr />
-            <hr />
-            <hr />
           </>
         );
       })}

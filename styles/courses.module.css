@@ -1,18 +1,31 @@
+.courseMain {
+  display: flex;
+  padding: 5%;
+}
+
+.lmsYtPlayer {
+  width: 100%;
+  min-height: 350px;
+  border-radius: 5px;
+}
+
 .collapse_items {
-  background-color: yellow;
-  margin: 20px auto;
-  padding: 10px 5px;
-  width: 50%;
+  background-color: rgb(255, 255, 255);
+  margin: 0 10px 20px 10px;
+  padding: 10px 10px;
+  box-shadow: 2px 2px 10px #010386;
+  border-radius: 5px;
+  user-select: none;
 }
 .collapse_title {
-  color: red;
+  color: green;
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
 }
 .collapse_content {
-  color: green;
+  color: rgb(18, 18, 18);
   overflow: hidden;
   max-height: 0;
   transition: all 0.5s cubic-bezier(0, 1, 0, 1);
@@ -22,6 +35,51 @@
   height: auto;
   max-height: 9999px;
   transition: all 0.5s cubic-bezier(1, 0, 1, 0);
-  color: green;
+  color: rgb(18, 18, 18);
   overflow: hidden;
+}
+
+.lms_classes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  background-color: black;
+  border-radius: 5px;
+  padding: 5px;
+}
+.lms_classes > p {
+  text-transform: uppercase;
+  color: white;
+  padding: 5px;
+}
+.lms_classes > p > span {
+  background: white;
+  color: black;
+  margin: 0 5px;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.class_title {
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  text-align: start;
+  margin: 5px 0;
+  width: 100%;
+  font-weight: bold;
+  color: rgb(41, 41, 41);
+  padding: 10px;
+  border-radius: 5px;
+  border-bottom: 2px solid blue;
+}
+
+@media (max-width: 400px) {
+  .lms_classes {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
