@@ -108,6 +108,7 @@
 .other_resource {
   display: flex;
   padding: 5%;
+  overflow: hidden;
 }
 
 .rc_ss_top {
