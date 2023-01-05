@@ -111,6 +111,14 @@
   overflow: hidden;
 }
 
+.rs_link{
+  background-color: orange;
+  padding: 3px 10px;
+  border-radius: 5px;
+  margin: 10% 0;
+  color: rgb(27, 27, 27);
+}
+
 .rc_ss_top {
   height: 50%;
 }

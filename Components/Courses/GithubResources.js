@@ -4,10 +4,10 @@ import "swiper/css/effect-cards";
 
 import { EffectCards } from "swiper";
 
+import { AiFillGithub } from "react-icons/ai";
 import styles from "../../styles/courses.module.css";
 
-
-const GithubResources = () => {
+const GithubResources = ({ githubData }) => {
   return (
     <>
       <Swiper
@@ -16,15 +16,25 @@ const GithubResources = () => {
         modules={[EffectCards]}
         className={styles.swiper}
       >
-        <SwiperSlide className={styles.swiper_slide}>Slide 1</SwiperSlide>
-        <SwiperSlide className={styles.swiper_slide}>Slide 2</SwiperSlide>
-        <SwiperSlide className={styles.swiper_slide}>Slide 3</SwiperSlide>
-        <SwiperSlide className={styles.swiper_slide}>Slide 4</SwiperSlide>
-        <SwiperSlide className={styles.swiper_slide}>Slide 5</SwiperSlide>
-        <SwiperSlide className={styles.swiper_slide}>Slide 6</SwiperSlide>
-        <SwiperSlide className={styles.swiper_slide}>Slide 7</SwiperSlide>
-        <SwiperSlide className={styles.swiper_slide}>Slide 8</SwiperSlide>
-        <SwiperSlide className={styles.swiper_slide}>Slide 9</SwiperSlide>
+        {githubData.map((dt) => {
+          return (
+            <>
+              <SwiperSlide className={styles.swiper_slide}>
+                <div className={styles.rc_ss_top}>
+                  <h1 className={styles.rc_web_title}>
+                    <AiFillGithub />
+                  </h1>
+                  <small>GitHub</small>
+                </div>
+                <div className={styles.rc_ss_btm}>
+                  <strong>{dt.resourceTitle}</strong>
+                  <p>{dt.resourceDescriptions}</p>
+                  <a href={dt.rcLinks} target='_blank' className={styles.rs_link}>Visit</a>
+                </div>
+              </SwiperSlide>
+            </>
+          );
+        })}
         <h2>GitHub</h2>
       </Swiper>
     </>

@@ -35,6 +35,13 @@ const YtResources = ({ youtubeData }) => {
                 <div className={styles.rc_ss_btm}>
                   <strong>{dt.resourceTitle}</strong>
                   <p>{dt.resourceDescriptions}</p>
+                  <a
+                    href={dt.rcLinks}
+                    target="_blank"
+                    className={styles.rs_link}
+                  >
+                    Visit
+                  </a>
                 </div>
               </SwiperSlide>
             </>
