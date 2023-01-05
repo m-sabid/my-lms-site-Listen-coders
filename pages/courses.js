@@ -1,11 +1,11 @@
+import { useState } from "react";
 import Head from "next/head";
 import styles from "../styles/courses.module.css";
 import ClassesScheduler from "../Components/Courses/ClassesScheduler";
 import LmsVideo from "../Components/Courses/LmsVideo";
 import { Grid } from "@mui/material";
-import { useState } from "react";
 
-const courses = () => {
+const Courses = () => {
   const [clickedData, setClickData] = useState({});
 
   const getVideoChange = (e) => {
@@ -31,4 +31,4 @@ const courses = () => {
   );
 };
 
-export default courses;
+export default Courses;
