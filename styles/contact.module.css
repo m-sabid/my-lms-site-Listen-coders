@@ -1,0 +1,24 @@
+.contact_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.contact_card {
+  background-color: plum;
+  border-radius: 5px;
+  padding: 20px;
+}
+.email_us,
+.call_us {
+  display: flex;
+  color: rgb(43, 38, 38);
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .email_us,
+  .call_us {
+    font-size: 10px;
+  }
+}
