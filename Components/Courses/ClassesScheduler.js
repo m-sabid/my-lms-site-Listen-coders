@@ -11,7 +11,7 @@ const ClassesScheduler = ({ getVideoChange }) => {
     if (selected === i) {
       return setSelected(null);
     }
-
+ 
     setSelected(i);
   };
 

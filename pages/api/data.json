@@ -6,15 +6,135 @@
     "classes": [
       {
         "class_title": "HTML CLASS 1",
-        "classLink": "https://www.youtube.com/embed/tmJP3Aeo8AE"
+        "classLink": "https://www.youtube.com/embed/tmJP3Aeo8AE",
+        "aboutClass": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to",
+        "otherResources": [
+          {
+            "youtube": [
+              {
+                "resourceTitle": "How to download vs code",
+                "rcLinks": "https://youtube.com/embed/8I3NTE4cn5s",
+                "resourceDescriptions": "Descriptions................"
+              },
+              {
+                "resourceTitle": "CSS All You Have to know",
+                "rcLinks": "https://youtube.com/embed/8I3NTE4cn5s",
+                "resourceDescriptions": "Descriptions................"
+              }
+            ],
+            "website": [
+              {
+                "resourceTitle": "How to download vs code",
+                "rcLinks": "https://youtube.com/embed/8I3NTE4cn5s",
+                "resourceDescriptions": "Descriptions................"
+              },
+              {
+                "resourceTitle": "CSS All You Have to know",
+                "rcLinks": "https://youtube.com/embed/8I3NTE4cn5s",
+                "resourceDescriptions": "Descriptions................"
+              }
+            ],
+            "github": [
+              {
+                "resourceTitle": "How to download vs code",
+                "rcLinks": "https://youtube.com/embed/8I3NTE4cn5s",
+                "resourceDescriptions": "Descriptions................"
+              },
+              {
+                "resourceTitle": "CSS All You Have to know",
+                "rcLinks": "https://youtube.com/embed/8I3NTE4cn5s",
+                "resourceDescriptions": "Descriptions................"
+              }
+            ]
+          }
+        ]
       },
       {
         "class_title": "HTML CLASS 2",
-        "classLink": "https://www.youtube.com/embed/rzgnyQ2bME4"
+        "classLink": "https://www.youtube.com/embed/rzgnyQ2bME4",
+        "aboutClass": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to",
+        "otherResources": [
+          {
+            "youtube": [
+              {
+                "resourceTitle": "How to download vs code",
+                "rcLinks": "https://youtube.com/embed/8I3NTE4cn5s",
+                "resourceDescriptions": "Descriptions................"
+              },
+              {
+                "resourceTitle": "CSS All You Have to know",
+                "rcLinks": "https://youtube.com/embed/8I3NTE4cn5s",
+                "resourceDescriptions": "Descriptions................"
+              }
+            ],
+            "website": [
+              {
+                "resourceTitle": "How to download vs code",
+                "rcLinks": "https://youtube.com/embed/8I3NTE4cn5s",
+                "resourceDescriptions": "Descriptions................"
+              },
+              {
+                "resourceTitle": "CSS All You Have to know",
+                "rcLinks": "https://youtube.com/embed/8I3NTE4cn5s",
+                "resourceDescriptions": "Descriptions................"
+              }
+            ],
+            "github": [
+              {
+                "resourceTitle": "How to download vs code",
+                "rcLinks": "https://youtube.com/embed/8I3NTE4cn5s",
+                "resourceDescriptions": "Descriptions................"
+              },
+              {
+                "resourceTitle": "CSS All You Have to know",
+                "rcLinks": "https://youtube.com/embed/8I3NTE4cn5s",
+                "resourceDescriptions": "Descriptions................"
+              }
+            ]
+          }
+        ]
       },
       {
         "class_title": "HTML CLASS 3",
-        "classLink": "https://youtube.com/embed/8I3NTE4cn5s"
+        "classLink": "https://youtube.com/embed/8I3NTE4cn5s",
+        "aboutClass": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to",
+        "otherResources": [
+          {
+            "youtube": [
+              {
+                "resourceTitle": "How to download vs code",
+                "rcLinks": "https://youtube.com/embed/8I3NTE4cn5s",
+                "resourceDescriptions": "Descriptions................"
+              },
+              {
+                "resourceTitle": "CSS All You Have to know",
+                "rcLinks": "https://youtube.com/embed/8I3NTE4cn5s",
+                "resourceDescriptions": "Descriptions................"
+              }
+            ],
+            "website": [
+              {
+                "resourceTitle": "Let's Explore More On Website",
+                "rcLinks": "https://www.w3schools.com/",
+                "resourceDescriptions": "Descriptions................"
+              },
+              {
+                "resourceTitle": "Let's Explore More On Website",
+                "rcLinks": "https://www.w3schools.com/"
+              }
+            ],
+            "github": [
+              {
+                "resourceTitle": "How to download vs code",
+                "rcLinks": "https://youtube.com/embed/8I3NTE4cn5s"
+              },
+              {
+                "resourceTitle": "CSS All You Have to know",
+                "rcLinks": "https://youtube.com/embed/8I3NTE4cn5s"
+              }
+            ]
+          }
+        ]
       }
     ]
   },

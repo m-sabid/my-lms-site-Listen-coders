@@ -1,6 +1,6 @@
-import styles from "../../styles/courses.module.css"
+import styles from "../../styles/courses.module.css";
 
-const LmsVideo = ({clickedData}) => {
+const LmsVideo = ({ clickedData }) => {
   return (
     <div>
       <iframe
@@ -11,6 +11,10 @@ const LmsVideo = ({clickedData}) => {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
+      <h1 className={styles.vTitle}>
+        {clickedData.class_title ? clickedData.class_title : "Welcome Video"}
+      </h1>
+      <p>{clickedData.aboutClass}</p>
     </div>
   );
 };

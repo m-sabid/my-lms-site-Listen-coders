@@ -4,14 +4,64 @@ import styles from "../styles/courses.module.css";
 import ClassesScheduler from "../Components/Courses/ClassesScheduler";
 import LmsVideo from "../Components/Courses/LmsVideo";
 import { Grid } from "@mui/material";
+import YtResources from "../Components/Courses/YtResources";
+import DocumentResources from "../Components/Courses/DocumentResources";
+import GithubResources from "../Components/Courses/GithubResources";
 
 const Courses = () => {
-  const [clickedData, setClickData] = useState({});
+  const [clickedData, setClickData] = useState({
+    class_title: "HTML CLASS 1",
+    classLink: "https://www.youtube.com/embed/tmJP3Aeo8AE",
+    aboutClass:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to",
+    otherResources: [
+      {
+        youtube: [
+          {
+            resourceTitle: "How to download vs code",
+            rcLinks: "https://youtube.com/embed/8I3NTE4cn5s",
+            resourceDescriptions: "Descriptions................",
+          },
+          {
+            resourceTitle: "CSS All You Have to know",
+            rcLinks: "https://youtube.com/embed/8I3NTE4cn5s",
+            resourceDescriptions: "Descriptions................",
+          },
+        ],
+        website: [
+          {
+            resourceTitle: "How to download vs code",
+            rcLinks: "https://youtube.com/embed/8I3NTE4cn5s",
+            resourceDescriptions: "Descriptions................",
+          },
+          {
+            resourceTitle: "CSS All You Have to know",
+            rcLinks: "https://youtube.com/embed/8I3NTE4cn5s",
+            resourceDescriptions: "Descriptions................",
+          },
+        ],
+        github: [
+          {
+            resourceTitle: "How to download vs code",
+            rcLinks: "https://youtube.com/embed/8I3NTE4cn5s",
+            resourceDescriptions: "Descriptions................",
+          },
+          {
+            resourceTitle: "CSS All You Have to know",
+            rcLinks: "https://youtube.com/embed/8I3NTE4cn5s",
+            resourceDescriptions: "Descriptions................",
+          },
+        ],
+      },
+    ],
+  });
 
-  const getVideoChange = (e) => {
-    setClickData(e)
-  }
-  console.log(clickedData)
+  const getVideoChange = (videoData) => {
+    setClickData(videoData);
+  };
+  const youtubeData = clickedData?.otherResources[0].youtube;
+  const websiteData = clickedData?.otherResources[0].website;
+  const githubData = clickedData?.otherResources[0].github;
   return (
     <>
       <Head>
@@ -21,10 +71,31 @@ const Courses = () => {
 
       <Grid container className={styles.courseMain}>
         <Grid xs={12} sm={12} md={6}>
-          <LmsVideo clickedData={clickedData}/>
+          <LmsVideo clickedData={clickedData} />
         </Grid>
         <Grid xs={12} sm={12} md={6}>
           <ClassesScheduler getVideoChange={getVideoChange} />
+        </Grid>
+      </Grid>
+
+      <Grid container className={styles.other_resource}>
+        <h1>
+          Resources for this class <hr /> <hr />
+        </h1>
+
+        <p className={styles.or_description}>
+          যদি ক্লাস এর বাহিরেও আপনার একটু ঘাঁটাঘাঁটি করতে ইচ্ছা হয় তাহলে নিচে
+          আমি আমার পছন্দ মত কিছু ফ্রি Resources শেয়ার করলাম। এইগুল দেখতে পারেন।
+          ⚠ আপনি চাইলে নিজের ইচ্ছা মত Resources দেখতে পারেন। আর দেখাও উচিত।
+        </p>
+        <Grid xs={12} sm={12} md={4}>
+          <YtResources youtubeData={youtubeData} />
+        </Grid>
+        <Grid xs={12} sm={12} md={4}>
+          <DocumentResources websiteData={websiteData} />
+        </Grid>
+        <Grid xs={12} sm={12} md={4}>
+          <GithubResources githubData={githubData} />
         </Grid>
       </Grid>
     </>
