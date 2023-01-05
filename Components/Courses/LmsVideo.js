@@ -14,7 +14,7 @@ const LmsVideo = ({ clickedData }) => {
       <h1 className={styles.vTitle}>
         {clickedData.class_title ? clickedData.class_title : "Welcome Video"}
       </h1>
-      <p>{clickedData.aboutClass}</p>
+      <p style={{marginTop:"10px", marginBottom:"10px"}}>{clickedData.aboutClass}</p>
     </div>
   );
 };
