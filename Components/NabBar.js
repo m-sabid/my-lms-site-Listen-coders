@@ -41,33 +41,33 @@ function ResponsiveAppBar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Link href="/">
-          <Image
-            className={styles.logo}
-            src="/listen_coders_logo.png"
-            alt="logo"
-            width={50}
-            height={50}
+            <Image
+              className={styles.logo}
+              src="/listen_coders_logo.png"
+              alt="logo"
+              width={50}
+              height={50}
             />
-            </Link>
+          </Link>
 
           <Link href="/">
-          <Typography
-            variant="h6"
-            noWrap
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
+            <Typography
+              variant="h6"
+              noWrap
+              href="/"
+              sx={{
+                mr: 2,
+                display: { xs: "none", md: "flex" },
+                fontFamily: "monospace",
+                fontWeight: 700,
+                letterSpacing: ".3rem",
+                color: "inherit",
+                textDecoration: "none",
+              }}
             >
-            LISTENCODERS
-          </Typography>
-            </Link>
+              LISTENCODERS
+            </Typography>
+          </Link>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -101,15 +101,17 @@ function ResponsiveAppBar() {
               {pages.map((page, index) => (
                 <MenuItem key={index} onClick={handleCloseNavMenu}>
                   <Link
-                href={`${page.toLowerCase() === "home" ? '/' : page.toLowerCase()}`}
-                key={page}
-                style={{
-                  margin: "0 5px",
-                  fontWeight: 500,
-                }}
-              >
-                {page.toUpperCase()}
-              </Link>
+                    href={`${
+                      page.toLowerCase() === "home" ? "/" : page.toLowerCase()
+                    }`}
+                    key={page}
+                    style={{
+                      margin: "0 5px",
+                      fontWeight: 500,
+                    }}
+                  >
+                    {page.toUpperCase()}
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>
@@ -127,12 +129,17 @@ function ResponsiveAppBar() {
             </Link>
           </Box>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }} style={{
-                  justifyContent: "space-evenly"}}
-                  >
+          <Box
+            sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
+            style={{
+              justifyContent: "space-evenly",
+            }}
+          >
             {pages.map((page, index) => (
               <Link
-              href={`${page.toLowerCase() === "home" ? '/' : page.toLowerCase()}`}
+                href={`${
+                  page.toLowerCase() === "home" ? "/" : page.toLowerCase()
+                }`}
                 key={index}
                 style={{
                   margin: "0 5px",
@@ -169,7 +176,20 @@ function ResponsiveAppBar() {
             >
               {settings.map((setting, index) => (
                 <MenuItem key={index} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+                  {/* <Typography textAlign="center">{setting}</Typography> */}
+                  <Link
+                    href={`${
+                      setting.toLowerCase() === "home" ? "/" : setting.toLowerCase()
+                    }`}
+                    key={index}
+                    style={{
+                      margin: "0 5px",
+                      color: "black",
+                      fontWeight: 500,
+                    }}
+                  >
+                    {setting.toUpperCase()}
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>

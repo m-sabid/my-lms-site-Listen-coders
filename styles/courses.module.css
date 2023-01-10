@@ -21,7 +21,7 @@
   margin: 10px 0;
   border-radius: 10px;
   padding: 0 10px;
-  text-shadow: 8px -5px 10px #0b0c3a;
+  text-shadow: var(--custom_shadow);
 }
 
 
@@ -33,7 +33,7 @@
   background-color: rgb(255, 255, 255);
   margin: 0 10px 20px 10px;
   padding: 10px 10px;
-  box-shadow: 2px 2px 10px #010386;
+  box-shadow: var(--custom_shadow);
   border-radius: 5px;
   user-select: none;
 }
