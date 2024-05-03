@@ -1,7 +1,7 @@
 [
   {
     "nameOfCourse": "What is html",
-    "uploadTime": "Dec 10, 2024 10:00:00",
+    "uploadTime": "May 4, 2024 01:12:00",
     "descriptions": "lorem hamma",
     "classes": [
       {
@@ -146,7 +146,59 @@
   {
     "nameOfCourse": "What is css",
     "uploadTime": "Dec 6, 2024 10:00:00",
-    "descriptions": "lorem hamma hamma"
+    "descriptions": "lorem hamma hamma",
+    "classes": [
+      {
+        "class_title": "HTML CLASS 1",
+        "classLink": "https://www.youtube.com/embed/tmJP3Aeo8AE",
+        "aboutClass": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to",
+        "otherResources": [
+          {
+            "youtube": [
+              {
+                "resourceTitle": "How to download vs code",
+                "rcLinks": "https://youtube.com/embed/8I3NTE4cn5s",
+                "resourceDescriptions": "Descriptions................"
+              },
+              {
+                "resourceTitle": "CSS All You Have to know",
+                "rcLinks": "https://youtube.com/embed/8I3NTE4cn5s",
+                "resourceDescriptions": "Descriptions................"
+              },
+              {
+                "resourceTitle": "CSS All You Have to know",
+                "rcLinks": "https://youtube.com/embed/8I3NTE4cn5s",
+                "resourceDescriptions": "Descriptions................"
+              }
+            ],
+            "website": [
+              {
+                "resourceTitle": "How to download vs code",
+                "rcLinks": "https://youtube.com/embed/8I3NTE4cn5s",
+                "resourceDescriptions": "Descriptions................"
+              },
+              {
+                "resourceTitle": "CSS All You Have to know",
+                "rcLinks": "https://youtube.com/embed/8I3NTE4cn5s",
+                "resourceDescriptions": "Descriptions................"
+              }
+            ],
+            "github": [
+              {
+                "resourceTitle": "How to download vs code",
+                "rcLinks": "https://youtube.com/embed/8I3NTE4cn5s",
+                "resourceDescriptions": "Descriptions................"
+              },
+              {
+                "resourceTitle": "CSS All You Have to know",
+                "rcLinks": "https://youtube.com/embed/8I3NTE4cn5s",
+                "resourceDescriptions": "Descriptions................"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "nameOfCourse": "Let's Know JavaScript",
