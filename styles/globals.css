@@ -9,16 +9,16 @@ body {
 }
 :root {
   /* --primaryColor: radial-gradient(ellipse at left, #4646ff, transparent),
-  radial-gradient(ellipse at top, #0c0cbe, transparent),
+  radial-gradient(ellipse at top, ##007BFF, transparent),
   radial-gradient(ellipse at bottom, #01aae5, transparent); */
   --gradient_bg_color: linear-gradient(
     to top,
     #1a1a1a,
     #333333,
     #4d4d4d,
-    #000099
+    #000000
   );
-  --primary_color: blue;
+  --primary_color: #007BFF;
   --secondary_color: gray;
   --custom_shadow:5px 5px 5px black;
 
